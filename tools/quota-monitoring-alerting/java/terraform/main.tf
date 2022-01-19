@@ -204,7 +204,6 @@ resource "google_bigquery_dataset" "dataset" {
   friendly_name                   = var.big_query_dataset_id
   description                     = var.big_query_dataset_desc
   location                        = var.big_query_dataset_location
-  default_partition_expiration_ms = var.big_query_dataset_default_partition_expiration_ms
   depends_on                      = [module.project-services]
 }
 
